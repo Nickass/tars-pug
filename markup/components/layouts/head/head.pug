@@ -1,3 +1,8 @@
+mixin icon(name)
+    !=pugHelpers.Icon.call(locals, {iconName: 'l-'+name})
+mixin gicon(name)
+    !=pugHelpers.Icon.call(locals, {iconName: name})
+
 mixin head(data)
     meta(http-equiv="Content-Type",content="text/html; charset=UTF-8")
     meta(http-equiv="X-UA-Compatible",content="IE=edge")
